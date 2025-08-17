@@ -1,0 +1,56 @@
+name: CI Build and Publish
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    env:
+      BUILD_NUMBER: ${{ github.run_number }}
+      
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Validate Gradle Wrapper
+      uses: gradle/actions/wrapper-validation@v4
+
+    - name: Set up JDK 21
+      uses: actions/setup-java@v4
+      with:
+        java-version: '21'
+        distribution: 'microsoft'
+
+    - name: Cache Gradle
+      uses: actions/cache@v4
+      with:
+        path: |
+          ~/.gradle/caches
+          ~/.gradle/wrapper
+        key: ${{ runner.os }}-gradle-${{ github.run_id }}
+        restore-keys: |
+          ${{ runner.os }}-gradle-
+
+    - name: Make Gradle executable
+      run: chmod +x gradlew
+
+    - name: Build with Gradle
+      run: ./gradlew build -x test --no-daemon --stacktrace
+
+    - name: Rename artifacts with build number
+      run: |
+        mkdir -p artifacts
+        cp build/libs/*.jar artifacts/
+        for f in artifacts/*.jar; do
+          mv "$f" "artifacts/CinematicZoom+build.${BUILD_NUMBER}.jar"
+        done
+
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: Smooth-Experience-Bar
+        path: artifacts/*.jar
