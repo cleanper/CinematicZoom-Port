@@ -1,0 +1,26 @@
+{
+  "key.cinematiczoom.zoom": "Cinematic Zoom",
+  "key.categories.cinematiczoom": "Cinematic Zoom",
+
+  "modmenu.descriptionTranslation.cinematiczoom": "Smooth zoom with cinematic black bars and per-frame easing.",
+  "modmenu.summaryTranslation.cinematiczoom": "Cinematic zoom with black bars.",
+
+
+  "cinematiczoom.config.title": "Cinematic Zoom - Settings",
+  "cinematiczoom.config.category.general": "General",
+
+  "cinematiczoom.option.bars_percent": "Black bars height, %s",
+  "cinematiczoom.option.bars_percent.tooltip": "Percent of screen height for each bar (top and bottom). 0–50%.",
+
+  "cinematiczoom.option.smooth_ms": "Smoothing speed: %s (0 = instant)",
+  "cinematiczoom.option.smooth_ms.tooltip": "Time to reach ~90% of the target. 0 disables the animation.",
+
+  "cinematiczoom.option.mouse_wheel_enabled": "Mouse wheel during zoom",
+  "cinematiczoom.option.mouse_wheel_enabled.tooltip": "Allow adjusting zoom level with the mouse wheel while holding the zoom key.",
+
+  "cinematiczoom.option.hide_hud": "Hide HUD/crosshair while zooming",
+  "cinematiczoom.option.hide_hud.tooltip": "Temporarily enables F1-like mode to hide HUD and crosshair during zoom.",
+
+  "cinematiczoom.option.cinematic_cam": "Enable cinematic camera while zooming",
+  "cinematiczoom.option.cinematic_cam.tooltip": "Temporarily enables smooth camera (cinematic camera) during zoom."
+}

@@ -1,0 +1,26 @@
+{
+  "key.cinematiczoom.zoom": "电影级缩放",
+  "key.categories.cinematiczoom": "电影级缩放",
+
+  "modmenu.descriptionTranslation.cinematiczoom": "流畅的缩放效果，带有电影级黑边和逐帧平滑过渡。",
+  "modmenu.summaryTranslation.cinematiczoom": "带有黑边效果的电影级缩放。",
+
+
+  "cinematiczoom.config.title": "电影级缩放 - 设置",
+  "cinematiczoom.config.category.general": "常规设置",
+
+  "cinematiczoom.option.bars_percent": "黑边高度: %s",
+  "cinematiczoom.option.bars_percent.tooltip": "上下黑边各占屏幕高度的百分比 (0-50%)",
+
+  "cinematiczoom.option.smooth_ms": "平滑速度: %s (0=立即)",
+  "cinematiczoom.option.smooth_ms.tooltip": "达到目标缩放90%所需时间 (0表示无动画效果)",
+
+  "cinematiczoom.option.mouse_wheel_enabled": "缩放时使用鼠标滚轮",
+  "cinematiczoom.option.mouse_wheel_enabled.tooltip": "按住缩放键时允许使用鼠标滚轮调整缩放级别",
+
+  "cinematiczoom.option.hide_hud": "缩放时隐藏HUD/准星",
+  "cinematiczoom.option.hide_hud.tooltip": "缩放时临时启用类似F1的模式，隐藏HUD界面和准星",
+
+  "cinematiczoom.option.cinematic_cam": "缩放时启用电影镜头",
+  "cinematiczoom.option.cinematic_cam.tooltip": "缩放时临时启用平滑镜头(电影镜头)效果"
+}
