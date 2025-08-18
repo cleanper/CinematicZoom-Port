@@ -26,7 +26,7 @@ Smooth, cinematic zoom for Minecraft with animated black bars, per-frame easing,
 
 ## Installation
 
-1. Install Fabric Loader & Fabric API for **Minecraft 1.21.7**.
+1. Install Fabric Loader & Fabric API for **Minecraft 1.21.1**.
 2. Put this mod’s JAR into your `mods/` folder.
 3. (Optional) Add **Mod Menu** for an in-game settings UI.
 
